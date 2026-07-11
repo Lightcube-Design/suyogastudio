@@ -863,8 +863,6 @@ main { padding-top: var(--header-h); }
 }
 .about-content { max-width: 520px; }
 .about-content .btn-pill { margin-top: 8px; }
-
-/* Professional image frames */
 .img-wrap {
   position: relative;
   border-radius: var(--radius-lg);
@@ -912,7 +910,7 @@ main { padding-top: var(--header-h); }
 .about-page .about-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 56px;
+  gap: 48px 64px;
   align-items: center;
   max-width: var(--container);
   margin: 0 auto;
@@ -921,15 +919,31 @@ main { padding-top: var(--header-h); }
 .about-page .about-block:nth-child(even) { background: var(--white); }
 .about-page .about-block:nth-child(odd) { background: var(--cream); }
 .about-page .about-block.section-tight-top { padding-top: 64px; }
-.about-block .img-wrap--portrait,
-.about-block .img-wrap--landscape {
+
+.about-block .img-wrap {
   width: 100%;
-  max-height: 520px;
+  max-width: 440px;
+  margin: 0 auto;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
 }
-.img-wrap--landscape { aspect-ratio: 3 / 2; }
-.img-wrap--about-instructor img { object-position: 58% center; }
-.img-wrap--about-approach img { object-position: center 35%; }
-.img-wrap--about-mission img { object-position: center 25%; }
+.about-block .img-wrap--portrait { aspect-ratio: 3 / 4; }
+.about-block .img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.about-block .img-wrap:hover img { transform: scale(1.03); }
+
+.img-wrap--about-instructor img { object-position: 55% 18%; }
+.img-wrap--about-approach img { object-position: center 12%; }
+.img-wrap--about-mission img { object-position: center 8%; }
+
+.about-page .about-block:nth-child(3) .img-wrap {
+  margin-left: auto;
+  margin-right: 0;
+}
 .about-block .subtitle {
   color: var(--gold);
   font-family: var(--font-body);
@@ -1127,8 +1141,8 @@ main { padding-top: var(--header-h); }
   .testimonial-grid { grid-template-columns: 1fr; }
   .about-page .about-block { grid-template-columns: 1fr; gap: 28px; padding: 48px 20px; }
   .about-page .about-block.section-tight-top { padding-top: 48px; }
-  .about-block .img-wrap--portrait,
-  .about-block .img-wrap--landscape { max-height: 420px; }
+  .about-block .img-wrap { max-width: 100%; }
+  .about-page .about-block:nth-child(3) .img-wrap { margin-left: auto; margin-right: auto; }
   .about-content { max-width: 100%; }
   .package-extras, .resources-grid, .programs-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
