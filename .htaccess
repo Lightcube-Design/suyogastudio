@@ -1,0 +1,48 @@
+# Su Yoga Studio — Apache config for Hostinger
+
+ErrorDocument 404 /404.html
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Force HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Force www
+  RewriteCond %{HTTP_HOST} ^suyogastudio\.in [NC]
+  RewriteRule ^(.*)$ https://www.suyogastudio.in/$1 [L,R=301]
+
+  # Wix-compatible URL redirects (old site paths)
+  RewriteRule ^blank/?$ /about.html [L,R=301]
+  RewriteRule ^blank-1/?$ /packages.html [L,R=301]
+  RewriteRule ^blank-2/?$ /testimonials.html [L,R=301]
+  RewriteRule ^blank-3/?$ /resources.html [L,R=301]
+  RewriteRule ^blank-6/?$ /contact.html [L,R=301]
+
+  # Clean URLs (optional — serve .html without extension)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(about|packages|testimonials|resources|contact)$ /$1.html [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>

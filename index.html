@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | SU-Yoga</title>
+<meta name="description" content="Welcome to Su Yoga Studio, where ancient wisdom meets modern wellness. Yoga classes for women, kids, and holistic health in Hadapsar, Pune.">
+<link rel="canonical" href="https://www.suyogastudio.in/">
+<link rel="icon" href="/assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<header id="SITE_HEADER" class="site-header">
+  <div class="header-grid">
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="side-drawer">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/" class="logo-center" aria-label="Su Yoga Studio home">
+      <img src="/assets/img/logo.png" alt="SU-Yoga" width="280" height="115">
+    </a>
+  </div>
+</header>
+
+<div class="drawer-overlay" id="drawer-overlay"></div>
+<nav class="side-drawer" id="side-drawer" aria-label="Mobile navigation">
+  <button class="drawer-close" id="drawer-close" aria-label="Close menu">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    Close
+  </button>
+  <ul class="drawer-nav">
+    <li><a href="/" class="active">Home</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/packages.html">Packages</a></li>
+    <li><a href="/testimonials.html">Testimonials</a></li>
+    <li><a href="/resources.html">Resources</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+  <a href="/contact.html" class="btn-pill drawer-cta">Join Now</a>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="hero-section">
+  <div class="hero-bg">
+    <img src="/assets/img/hero-yoga.jpg" alt="Woman practicing yoga in a peaceful setting" width="1920" height="1280" loading="eager" fetchpriority="high" decoding="async">
+  </div>
+  <div class="hero-content-box">
+    <span class="eyebrow">Su Yoga Studio &middot; Hadapsar, Pune</span>
+    <h1 class="font-hero">Where ancient wisdom meets <em>modern wellness</em></h1>
+    <div class="hero-lines">
+      <p>Join &amp; experience the harmony of movement, breath, and mindfulness.</p>
+    </div>
+    <div class="hero-actions">
+      <a href="/contact.html" class="btn-pill">Join Now</a>
+      <a href="/packages.html" class="btn-outline btn-light">View Packages</a>
+    </div>
+    <div class="hero-trust">
+      <div><strong>4</strong><span>Signature Programs</span></div>
+      <div><strong>1:1</strong><span>Personal Attention</span></div>
+      <div><strong>100%</strong><span>Certified Instruction</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS SLIDESHOW -->
+<section class="services-section" id="programs">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Our Programs</span>
+      <h2 class="font-h2">A practice for every body</h2>
+      <p>From gentle beginnings to focused health goals, every programme is designed around you.</p>
+    </div>
+  </div>
+  <div class="slideshow-wrap" data-reveal>
+    <div class="slideshow" id="programs-slideshow">
+      <div class="slide active">
+        <div class="slide-img"><img src="/assets/img/services-05.jpg" alt="Yogini Women's Yoga" width="900" height="675" loading="lazy"></div>
+        <div class="slide-text">
+          <h2 class="font-h3">Yogini (Women's Yoga)</h2>
+          <p>Designed for women of all ages, helping to build strength, flexibility, and inner peace. Classes focus on hormonal balance, stress relief, and overall well-being.</p>
+          <a href="/packages.html" class="btn-outline-pill">Learn More</a>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-img"><img src="/assets/img/services-06.jpg" alt="Young Yogi's Kid's Yoga" width="900" height="675" loading="lazy"></div>
+        <div class="slide-text">
+          <h2 class="font-h3">Young Yogi&rsquo;s (Kid's Yoga)</h2>
+          <p>A fun and engaging program that helps children improve focus, flexibility, and emotional well-being through playful movements and breathing techniques.</p>
+          <a href="/packages.html" class="btn-outline-pill">Learn More</a>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-img"><img src="/assets/img/services-07.jpg" alt="Harmonal Harmony" width="900" height="675" loading="lazy"></div>
+        <div class="slide-text">
+          <h2 class="font-h3">Harmonal Harmony (Special Health Packages)</h2>
+          <p>Customized yoga sessions focused on specific health conditions including diet plans: Beneficial for PCOD, PCOS &amp; Thyroid Wellness, Pregnancy, Diabetes &amp; Heart Health, Weight Loss &amp; Detox.</p>
+          <a href="/packages.html" class="btn-outline-pill">Learn More</a>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-img"><img src="/assets/img/services-08.jpg" alt="Nutritionist Guidance" width="900" height="675" loading="lazy"></div>
+        <div class="slide-text">
+          <h2 class="font-h3">Special Nutritionist Guidance</h2>
+          <p>Sugandha provides personalized diet plans to complement your yoga journey, ensuring a holistic approach to health and well-being.</p>
+          <a href="/packages.html" class="btn-outline-pill">Learn More</a>
+        </div>
+      </div>
+      <div class="slide-controls">
+        <div class="slide-nav">
+          <button class="slide-prev" aria-label="Previous program">&#8592;</button>
+        </div>
+        <div class="slide-dots" id="slide-dots"></div>
+        <div class="slide-nav">
+          <button class="slide-next" aria-label="Next program">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="section-head" data-reveal>
+    <span class="eyebrow">Testimonials</span>
+    <h2 class="font-h2">Client Testimonials</h2>
+  </div>
+  <div class="testimonial-grid">
+    <div class="testimonial-card" data-reveal>
+      <svg class="quote-icon" viewBox="0 0 55 36" aria-hidden="true"><path d="M13.75 36C5.5 36 0 30.5 0 22.25 0 14 5.5 8.5 13.75 8.5 22 8.5 27.5 14 27.5 22.25 27.5 26 26.125 29 23.375 31.25 20.625 33.5 17.325 35 13.75 36ZM41.25 36C33 36 27.5 30.5 27.5 22.25 27.5 14 33 8.5 41.25 8.5 49.5 8.5 55 14 55 22.25 55 26 53.625 29 50.875 31.25 48.125 33.5 44.825 35 41.25 36Z"/></svg>
+      <p class="review">Sugandha is an exceptional instructor. Her attention to detail and calming presence make every session enjoyable and fulfilling.</p>
+      <div class="name">Mansi</div>
+      <div class="tagline">Transform Your Life</div>
+    </div>
+    <div class="testimonial-card" data-reveal data-reveal-delay="1">
+      <svg class="quote-icon" viewBox="0 0 55 36" aria-hidden="true"><path d="M13.75 36C5.5 36 0 30.5 0 22.25 0 14 5.5 8.5 13.75 8.5 22 8.5 27.5 14 27.5 22.25 27.5 26 26.125 29 23.375 31.25 20.625 33.5 17.325 35 13.75 36ZM41.25 36C33 36 27.5 30.5 27.5 22.25 27.5 14 33 8.5 41.25 8.5 49.5 8.5 55 14 55 22.25 55 26 53.625 29 50.875 31.25 48.125 33.5 44.825 35 41.25 36Z"/></svg>
+      <p class="review">Sugandha's yoga retreat was a life-changing experience. The beautiful setting and her expert teachings left me rejuvenated and centered.</p>
+      <div class="name">Priya</div>
+      <div class="tagline">Experience Serenity</div>
+    </div>
+    <div class="testimonial-card" data-reveal data-reveal-delay="2">
+      <svg class="quote-icon" viewBox="0 0 55 36" aria-hidden="true"><path d="M13.75 36C5.5 36 0 30.5 0 22.25 0 14 5.5 8.5 13.75 8.5 22 8.5 27.5 14 27.5 22.25 27.5 26 26.125 29 23.375 31.25 20.625 33.5 17.325 35 13.75 36ZM41.25 36C33 36 27.5 30.5 27.5 22.25 27.5 14 33 8.5 41.25 8.5 49.5 8.5 55 14 55 22.25 55 26 53.625 29 50.875 31.25 48.125 33.5 44.825 35 41.25 36Z"/></svg>
+      <p class="review">Sugandha's online classes are fantastic. Her virtual classes are engaging and effective, providing a seamless yoga experience.</p>
+      <div class="name">Sunita</div>
+      <div class="tagline">Start Your Journey</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-banner" data-reveal>
+      <div>
+        <h2 class="font-h2">Transform your life today</h2>
+        <p>Yoga is more than just a practice&mdash;it&rsquo;s a way of life. Join our community and experience the transformation through membership packages, private sessions, and workshops.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="/contact.html" class="btn-pill btn-light">Join Now</a>
+        <a href="tel:02044853889" class="btn-outline btn-light">Call the Studio</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-grid">
+    <div class="contact-info" data-reveal>
+      <span class="eyebrow">Get in Touch</span>
+      <h2 class="font-h2">We&rsquo;d love to hear from you</h2>
+      <p class="font-body">Book a class, ask a question, or simply say hello &mdash; our studio in Joyville, Hadapsar is ready to welcome you.</p>
+      <h3 class="font-h5">Contact Us</h3>
+      <div class="contact-details">
+      <div class="contact-detail">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span><a href="mailto:suyogastudio@gmail.com">suyogastudio@gmail.com</a></span>
+      </div>
+      <div class="contact-detail">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span><a href="tel:02044853889">020 4485 3889</a></span>
+      </div>
+      <div class="contact-detail">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Joyville, Hadapsar, Pune</span>
+      </div>
+      </div>
+    </div>
+    <form class="contact-form contact-form-el" action="https://api.web3forms.com/submit" method="POST" data-reveal data-reveal-delay="1">
+      <h2>Get in touch</h2>
+      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+      <input type="hidden" name="subject" value="New enquiry from Su Yoga Studio website">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+      <div class="form-row">
+        <div class="form-group"><label for="fname">First name</label><input type="text" id="fname" name="first_name"></div>
+        <div class="form-group"><label for="lname">Last name</label><input type="text" id="lname" name="last_name"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label for="email">Email <span class="req">*</span></label><input type="email" id="email" name="email" required></div>
+        <div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone" name="phone"></div>
+      </div>
+      <div class="form-group"><label for="medical">Medical History</label><input type="text" id="medical" name="medical_history"></div>
+      <div class="form-group"><label for="message">Message <span class="req">*</span></label><textarea id="message" name="message" required></textarea></div>
+      <button type="submit" class="btn-pill form-submit">Submit</button>
+      <div class="form-status" role="status"></div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer id="SITE_FOOTER" class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="/assets/img/logo.png" alt="Su Yoga Studio">
+      <p>Where ancient wisdom meets modern wellness. Yoga, meditation and nutrition guidance for women, children and every stage of life in Hadapsar, Pune.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/packages.html">Packages</a>
+      <a href="/testimonials.html">Testimonials</a>
+      <a href="/resources.html">Resources</a>
+    </div>
+    <div class="footer-col">
+      <h4>Programs</h4>
+      <a href="/packages.html">Yogini (Women's Yoga)</a>
+      <a href="/packages.html">Young Yogi's (Kid's Yoga)</a>
+      <a href="/packages.html">Harmonal Harmony</a>
+      <a href="/packages.html">Nutrition Guidance</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:suyogastudio@gmail.com">suyogastudio@gmail.com</a>
+      <a href="tel:02044853889">020 4485 3889</a>
+      <a href="/contact.html">Joyville, Hadapsar, Pune</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; <span data-year>2025</span> Su Yoga Studio. All rights reserved.</span>
+    <span class="footer-credit">Created by <a href="https://www.lightcubedesign.com" target="_blank" rel="noopener" aria-label="Lightcube Design"><img src="/assets/img/lightcube-design-logo.svg" alt="Lightcube Design"></a></span>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
