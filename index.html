@@ -6,7 +6,7 @@
 <title>Home | SU-Yoga</title>
 <meta name="description" content="Welcome to Su Yoga Studio, where ancient wisdom meets modern wellness. Yoga classes for women, kids, and holistic health in Hadapsar, Pune.">
 <link rel="canonical" href="https://www.suyogastudio.in/">
-<link rel="icon" href="assets/img/logo.png">
+<link rel="icon" href="assets/img/logo-icon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="assets/css/style.css">
@@ -19,7 +19,7 @@
       <span></span><span></span><span></span>
     </button>
     <a href="index.html" class="logo-center" aria-label="Su Yoga Studio home">
-      <img src="assets/img/logo.png" alt="SU-Yoga" width="280" height="115">
+      <img src="assets/img/logo.svg" alt="SU-Yoga" width="280" height="115">
     </a>
   </div>
 </header>
@@ -46,7 +46,10 @@
 <!-- HERO -->
 <section class="hero-section">
   <div class="hero-bg">
-    <img src="assets/img/hero-yoga.jpg" alt="Woman practicing yoga in a peaceful setting" width="1920" height="1280" loading="eager" fetchpriority="high" decoding="async">
+    <video autoplay muted loop playsinline poster="assets/img/hero-poster.jpg" aria-label="Yoga practice background video">
+      <source src="assets/img/hero-video.mp4" type="video/mp4">
+    </video>
+    <img src="assets/img/hero-poster.jpg" alt="" class="hero-fallback" aria-hidden="true">
   </div>
   <div class="hero-content-box">
     <span class="eyebrow">Su Yoga Studio &middot; Hadapsar, Pune</span>
@@ -63,6 +66,18 @@
       <div><strong>1:1</strong><span>Personal Attention</span></div>
       <div><strong>100%</strong><span>Certified Instruction</span></div>
     </div>
+  </div>
+</section>
+
+<!-- SERVICE TYPES -->
+<section class="services-icons-section" aria-label="Yoga services offered">
+  <div class="services-icons-grid">
+    <img src="assets/img/services-18.svg" alt="Hatha Yoga" width="132" height="50" loading="lazy">
+    <img src="assets/img/services-19.svg" alt="Traditional Yoga" width="145" height="50" loading="lazy">
+    <img src="assets/img/services-20.svg" alt="Face Yoga" width="120" height="50" loading="lazy">
+    <img src="assets/img/services-21.svg" alt="Meditation" width="120" height="50" loading="lazy">
+    <img src="assets/img/services-22.svg" alt="Personal Coaching" width="145" height="50" loading="lazy">
+    <img src="assets/img/services-23.svg" alt="Group Class" width="120" height="50" loading="lazy">
   </div>
 </section>
 
@@ -215,7 +230,7 @@
 <footer id="SITE_FOOTER" class="site-footer">
   <div class="footer-grid">
     <div class="footer-brand">
-      <img src="assets/img/logo.png" alt="Su Yoga Studio">
+      <img src="assets/img/logo-white.svg" alt="Su Yoga Studio">
       <p>Where ancient wisdom meets modern wellness. Yoga, meditation and nutrition guidance for women, children and every stage of life in Hadapsar, Pune.</p>
     </div>
     <div class="footer-col">
