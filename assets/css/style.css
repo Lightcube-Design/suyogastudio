@@ -30,7 +30,7 @@
   --shadow-md: 0 12px 40px rgba(26, 61, 46, 0.1);
   --shadow-lg: 0 24px 60px rgba(26, 61, 46, 0.14);
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
-  --header-h: 80px;
+  --header-h: 96px;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -201,16 +201,16 @@ section { padding: 80px 0; position: relative; }
 }
 .logo-center img,
 .logo-center .logo-svg {
-  height: 58px;
+  height: 72px;
   width: auto;
-  max-width: min(260px, 58vw);
+  max-width: min(320px, 72vw);
   display: block;
   margin: 0 auto;
   transition: height 0.3s var(--ease);
 }
 #SITE_HEADER.scrolled .logo-center img,
 #SITE_HEADER.scrolled .logo-center .logo-svg {
-  height: 50px;
+  height: 62px;
 }
 .main-nav, .header-cta, .header-actions .btn-pill { display: none; }
 
@@ -1107,9 +1107,9 @@ main { padding-top: var(--header-h); }
   .container { padding: 0 20px; }
   section { padding: 72px 0; }
   .header-grid, .header-inner { padding: 8px 20px; }
-  .logo-center img, .logo-center .logo-svg { height: 50px; max-width: min(220px, 70vw); }
+  .logo-center img, .logo-center .logo-svg { height: 58px; max-width: min(280px, 78vw); }
   #SITE_HEADER.scrolled .logo-center img,
-  #SITE_HEADER.scrolled .logo-center .logo-svg { height: 44px; }
+  #SITE_HEADER.scrolled .logo-center .logo-svg { height: 52px; }
   .menu-btn, .nav-toggle { right: 20px; }
   .slideshow-wrap, .testimonial-grid, .contact-grid, .about-block,
   .package-extras, .resources-grid { padding-left: 20px; padding-right: 20px; }
