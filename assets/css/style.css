@@ -311,6 +311,72 @@ main { padding-top: var(--header-h); }
   overflow: hidden;
   padding: 0;
 }
+
+/* Home hero — original Wix style (Services-17 image, centered text) */
+.hero-home {
+  min-height: calc(78vh - var(--header-h));
+  min-height: calc(78dvh - var(--header-h));
+  align-items: center;
+  justify-content: center;
+}
+.hero-home .hero-bg img {
+  object-fit: cover;
+  object-position: center center;
+}
+.hero-home .hero-bg::after {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.22) 40%,
+    rgba(255, 255, 255, 0.12) 100%
+  );
+}
+.hero-content-box--center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 32px 56px;
+}
+.hero-welcome-title {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: clamp(1.45rem, 3vw, 2.15rem);
+  line-height: 1.38;
+  color: #000000;
+  max-width: 620px;
+  margin: 0 auto 18px;
+  letter-spacing: -0.01em;
+}
+.hero-welcome-lead {
+  display: block;
+  margin-bottom: 4px;
+}
+.hero-welcome-sub {
+  font-family: var(--font-body);
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+  font-weight: 400;
+  line-height: 1.65;
+  color: #1a1a1a;
+  max-width: 520px;
+  margin: 0 auto 28px;
+}
+.btn-join {
+  background: #000000;
+  color: #ffffff;
+  border-color: #000000;
+  padding: 13px 36px;
+  font-size: 0.95rem;
+  box-shadow: none;
+}
+.btn-join:hover {
+  background: #222222;
+  border-color: #222222;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -1047,7 +1113,9 @@ main { padding-top: var(--header-h); }
   .menu-btn, .nav-toggle { right: 20px; }
   .slideshow-wrap, .testimonial-grid, .contact-grid, .about-block,
   .package-extras, .resources-grid { padding-left: 20px; padding-right: 20px; }
-  .hero-content-box { padding: 48px 20px 64px; }
+  .hero-content-box--center { padding: 32px 20px 48px; }
+  .hero-welcome-title { font-size: clamp(1.25rem, 5vw, 1.65rem); }
+  .hero-home .hero-bg img { object-position: 55% center; }
   .hero-trust { grid-template-columns: 1fr; gap: 24px; }
   .slide.active { grid-template-columns: 1fr; min-height: auto; }
   .slide-img img { min-height: 280px; }
