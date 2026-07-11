@@ -906,7 +906,169 @@ main { padding-top: var(--header-h); }
 }
 .page-hero .font-body, .page-hero p { color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto; }
 
-/* ── ABOUT ── */
+/* ── ABOUT (Wix /blank layout) ── */
+.about-page--wix {
+  background: var(--white);
+  padding-top: calc(var(--header-h) + 24px);
+}
+
+.about-wix-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.about-wix-section {
+  padding: 40px 0 56px;
+}
+
+.about-wix-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.2vw, 2.25rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: #000000;
+  margin: 0 0 20px;
+}
+
+.about-wix-h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.25;
+  color: #000000;
+  margin: 0 0 16px;
+}
+
+.about-wix-h4 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #000000;
+  margin: 0;
+}
+
+.about-wix-h4--sub {
+  font-weight: 400;
+  color: #6e6e6e;
+  margin-top: 4px;
+}
+
+.about-wix-body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #6e6e6e;
+  margin: 0 0 1em;
+}
+
+.about-wix-body:last-child { margin-bottom: 0; }
+
+/* Instructor: text left, collage right */
+.about-wix-instructor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 40px;
+  align-items: start;
+}
+
+.about-wix-copy { max-width: 100%; }
+
+.about-wix-collage--instructor {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  min-height: 380px;
+  margin-left: auto;
+}
+
+.about-wix-collage--instructor .collage-main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 58%;
+  aspect-ratio: 653 / 862;
+  object-fit: cover;
+  display: block;
+}
+
+.about-wix-collage--instructor .collage-accent--1 {
+  position: absolute;
+  left: 47%;
+  top: 6%;
+  width: 42%;
+  aspect-ratio: 446 / 273;
+  object-fit: cover;
+  display: block;
+}
+
+.about-wix-collage--instructor .collage-accent--2 {
+  position: absolute;
+  right: 0;
+  bottom: 4%;
+  width: 32%;
+  aspect-ratio: 446 / 273;
+  object-fit: cover;
+  display: block;
+}
+
+.about-wix-instructor-name {
+  margin-top: 36px;
+  text-align: center;
+}
+
+/* Approach: image left, text right */
+.about-wix-approach-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 32px;
+  align-items: center;
+}
+
+.about-wix-approach-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.about-wix-approach-copy .btn-join {
+  margin-top: 8px;
+}
+
+/* Mission */
+.about-wix-mission-title {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.about-wix-mission-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.about-wix-mission-images img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.about-wix-mission-copy {
+  max-width: 720px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.about-wix-mission-copy .about-wix-h3 {
+  margin-bottom: 12px;
+}
+
+/* Legacy about-block (unused) */
 .about-page .about-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1149,6 +1311,13 @@ main { padding-top: var(--header-h); }
   .about-block .img-wrap { max-width: 100%; }
   .about-page .about-block:nth-child(3) .img-wrap { margin-left: auto; margin-right: auto; }
   .about-content { max-width: 100%; }
+  .about-wix-inner { padding: 0 20px; }
+  .about-wix-section { padding: 32px 0 40px; }
+  .about-wix-instructor-grid,
+  .about-wix-approach-grid { grid-template-columns: 1fr; gap: 28px; }
+  .about-wix-collage--instructor { max-width: 100%; min-height: 320px; margin: 0 auto; }
+  .about-wix-approach-media img { max-height: 360px; object-fit: contain; margin: 0 auto; }
+  .about-wix-mission-images { gap: 12px; }
   .package-extras, .resources-grid, .programs-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
