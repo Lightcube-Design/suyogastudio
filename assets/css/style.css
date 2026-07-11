@@ -925,19 +925,24 @@ main { padding-top: var(--header-h); }
   max-width: 440px;
   margin: 0 auto;
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-sm);
 }
 .about-block .img-wrap--portrait { aspect-ratio: 3 / 4; }
+.about-block .img-wrap--landscape { aspect-ratio: 920 / 673; max-width: 520px; }
 .about-block .img-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-.about-block .img-wrap:hover img { transform: scale(1.03); }
+.about-block .img-wrap:hover img { transform: none; }
 
 .img-wrap--about-instructor img { object-position: 55% 18%; }
-.img-wrap--about-approach img { object-position: center 12%; }
+.img-wrap--about-approach {
+  background: var(--white);
+  box-shadow: 0 8px 28px rgba(26, 61, 46, 0.08);
+}
+.img-wrap--about-approach img { object-position: center 22%; }
 .img-wrap--about-mission img { object-position: center 8%; }
 
 .about-page .about-block:nth-child(3) .img-wrap {
