@@ -909,26 +909,27 @@ main { padding-top: var(--header-h); }
 .page-hero .font-body, .page-hero p { color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto; }
 
 /* ── ABOUT ── */
-.about-block {
+.about-page .about-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  gap: 56px;
   align-items: center;
   max-width: var(--container);
   margin: 0 auto;
-  padding: 80px 32px;
+  padding: 72px 32px;
 }
-.about-block:nth-child(even) { background: var(--white); }
+.about-page .about-block:nth-child(even) { background: var(--white); }
+.about-page .about-block:nth-child(odd) { background: var(--cream); }
+.about-page .about-block.section-tight-top { padding-top: 64px; }
 .about-block .img-wrap--portrait,
-.about-block .img-wrap--landscape { width: 100%; }
-.about-block > img {
-  border-radius: var(--radius-lg);
-  min-height: 400px;
-  aspect-ratio: 4 / 5;
-  box-shadow: var(--shadow-lg);
-  object-fit: cover;
-  object-position: center 22%;
+.about-block .img-wrap--landscape {
+  width: 100%;
+  max-height: 520px;
 }
+.img-wrap--landscape { aspect-ratio: 3 / 2; }
+.img-wrap--about-instructor img { object-position: 58% center; }
+.img-wrap--about-approach img { object-position: center 35%; }
+.img-wrap--about-mission img { object-position: center 25%; }
 .about-block .subtitle {
   color: var(--gold);
   font-family: var(--font-body);
@@ -1124,8 +1125,11 @@ main { padding-top: var(--header-h); }
   .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .contact-form { padding: 32px 24px; }
   .testimonial-grid { grid-template-columns: 1fr; }
-  .about-block { grid-template-columns: 1fr; gap: 32px; padding: 56px 20px; }
-  .about-block > img { min-height: 300px; aspect-ratio: 16 / 11; }
+  .about-page .about-block { grid-template-columns: 1fr; gap: 28px; padding: 48px 20px; }
+  .about-page .about-block.section-tight-top { padding-top: 48px; }
+  .about-block .img-wrap--portrait,
+  .about-block .img-wrap--landscape { max-height: 420px; }
+  .about-content { max-width: 100%; }
   .package-extras, .resources-grid, .programs-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
