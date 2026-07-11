@@ -969,104 +969,175 @@ main { padding-top: var(--header-h); }
 .about-wix-instructor-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px 40px;
-  align-items: start;
+  gap: 24px 48px;
+  align-items: center;
 }
 
-.about-wix-copy { max-width: 100%; }
+.about-wix-instructor-grid .about-wix-copy {
+  width: 90%;
+  max-width: 440px;
+  text-align: left;
+  align-self: center;
+  justify-self: start;
+}
+
+.about-wix-instructor-grid .about-wix-h2 {
+  margin-bottom: 24px;
+}
+
+.about-wix-instructor-grid .about-wix-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  text-align: left;
+}
 
 .about-wix-collage--instructor {
   position: relative;
   width: 100%;
-  max-width: 400px;
-  min-height: 380px;
+  max-width: 500px;
+  min-height: 480px;
   margin-left: auto;
+  margin-right: 0;
 }
 
 .about-wix-collage--instructor .collage-main {
   position: absolute;
   left: 0;
-  top: 0;
-  width: 58%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 66%;
   aspect-ratio: 653 / 862;
   object-fit: cover;
+  object-position: center top;
   display: block;
+  z-index: 1;
 }
 
 .about-wix-collage--instructor .collage-accent--1 {
   position: absolute;
-  left: 47%;
-  top: 6%;
-  width: 42%;
+  left: 50%;
+  top: 0;
+  width: 50%;
   aspect-ratio: 446 / 273;
   object-fit: cover;
+  object-position: center;
   display: block;
+  z-index: 2;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
 .about-wix-collage--instructor .collage-accent--2 {
   position: absolute;
   right: 0;
-  bottom: 4%;
-  width: 32%;
+  bottom: 0;
+  width: 46%;
   aspect-ratio: 446 / 273;
   object-fit: cover;
+  object-position: center;
   display: block;
+  z-index: 2;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
 .about-wix-instructor-name {
-  margin-top: 36px;
+  margin-top: 48px;
   text-align: center;
+}
+
+.about-wix-instructor-name .about-wix-h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.about-wix-instructor-name .about-wix-h4--sub {
+  font-size: 1rem;
+  margin-top: 6px;
 }
 
 /* Approach: image left, text right */
 .about-wix-approach-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0 32px;
+  gap: 0 40px;
   align-items: center;
+}
+
+.about-wix-approach-media {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 420px;
 }
 
 .about-wix-approach-media img {
   width: 100%;
+  max-width: 100%;
   height: auto;
+  min-height: 380px;
   display: block;
   object-fit: contain;
   object-position: left center;
 }
 
+.about-wix-approach-copy {
+  text-align: left;
+  align-self: center;
+  max-width: 420px;
+  justify-self: start;
+}
+
+.about-wix-approach-copy .about-wix-h2 {
+  margin-bottom: 20px;
+}
+
+.about-wix-approach-copy .about-wix-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
 .about-wix-approach-copy .btn-join {
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 /* Mission */
 .about-wix-mission-title {
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
 .about-wix-mission-images {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-bottom: 28px;
+  gap: 20px;
+  margin-bottom: 32px;
 }
 
 .about-wix-mission-images img {
   width: 100%;
-  height: auto;
+  min-height: 240px;
+  max-height: 360px;
   display: block;
   object-fit: cover;
+  object-position: center;
 }
 
 .about-wix-mission-copy {
-  max-width: 720px;
-  margin: 0 auto 28px;
+  max-width: 680px;
+  margin: 0 auto 32px;
   text-align: center;
 }
 
 .about-wix-mission-copy .about-wix-h3 {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
+
+.about-wix-mission-copy .about-wix-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.about-wix-copy { max-width: 100%; }
 
 /* Legacy about-block (unused) */
 .about-page .about-block {
@@ -1314,10 +1385,13 @@ main { padding-top: var(--header-h); }
   .about-wix-inner { padding: 0 20px; }
   .about-wix-section { padding: 32px 0 40px; }
   .about-wix-instructor-grid,
-  .about-wix-approach-grid { grid-template-columns: 1fr; gap: 28px; }
-  .about-wix-collage--instructor { max-width: 100%; min-height: 320px; margin: 0 auto; }
-  .about-wix-approach-media img { max-height: 360px; object-fit: contain; margin: 0 auto; }
-  .about-wix-mission-images { gap: 12px; }
+  .about-wix-approach-grid { grid-template-columns: 1fr; gap: 32px; }
+  .about-wix-instructor-grid .about-wix-copy { width: 100%; max-width: 100%; }
+  .about-wix-collage--instructor { max-width: 100%; min-height: 400px; margin: 0 auto; }
+  .about-wix-approach-media { min-height: auto; justify-content: center; }
+  .about-wix-approach-media img { min-height: 280px; max-height: 400px; object-fit: contain; margin: 0 auto; }
+  .about-wix-approach-copy { max-width: 100%; }
+  .about-wix-mission-images img { min-height: 180px; max-height: 280px; }
   .package-extras, .resources-grid, .programs-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
